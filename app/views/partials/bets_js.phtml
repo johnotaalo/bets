@@ -1,0 +1,14 @@
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		$('#add_row').click(function(e){
+			e.preventDefault();
+
+			var html = '<tr><td><input type="text" class = "form-control" name = "home_team[]" required></td><td><input type="text" class = "form-control" name = "away_team[]" required></td><td><input type="text" class = "form-control" name = "pick[]" required></td><td><input type="text" class = "form-control" name = "odds[]" required></td></tr>';
+			
+			$('tbody#bet_slip_details').append(html);
+		});
+
+		$('.datatable').dataTable();
+	});
+</script>
